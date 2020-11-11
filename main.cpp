@@ -43,12 +43,12 @@ int main()
 //        cout<<sift[i]<<endl;
 //    }
     //loadSift::test();
-
-    //MissionAgent::genCenters(ms.c_str(),mc.c_str(), 20000);
+    MissionAgent::clusteringTest("data/sift_base.fvecs", "tmp.centers", 10000);
+//    MissionAgent::genCenters(ms.c_str(),mc.c_str(), 20000);
 
 
     //MissionAgent::BruteForceSearch(ms.c_str(), mc.c_str(),mw.c_str());
-    MissionAgent::HEQuantization(ms.c_str(),projectionfile.c_str(),medianfile.c_str(),mw.c_str(),HEWords.c_str());
+//    MissionAgent::HEQuantization(ms.c_str(),projectionfile.c_str(),medianfile.c_str(),mw.c_str(),HEWords.c_str());
     //MissionAgent::findGEOTop("target/sift/","target/kps/", "target/sift_shape.csv", projectionfile.c_str(),medianfile.c_str(),mc.c_str(), mw.c_str(),HEWords.c_str() ,mg.c_str(), "data/sift_shape.csv", 11);
     cout << "Hello world!" << endl;
     return 0;

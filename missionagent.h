@@ -40,7 +40,7 @@ public:
 
     static bool *findGEOTop(const char * projectionfile, const char * medianfile, const char * centersfile,
                             const char * wordsfile, const char * hesfile, const char *geosfile, const char *szfile, int TOPK);
-
+    static bool clusteringTest(const char *filedir, const char * centersFile, unsigned clustNum);
 
 };
 

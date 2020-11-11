@@ -1,4 +1,5 @@
 #include "missionagent.h"
+#include "clustering/ioagent.h"
 #include "loadSift.h"
 #include "clustering/nngkmeans.h"
 #include "hammingEmbedding/he.h"
@@ -11,6 +12,21 @@
 #include <tuple>
 
 using namespace std;
+
+bool MissionAgent::clusteringTest(const char *file, const char * centersFile, unsigned clustNum)
+{
+    unsigned row, col;
+    cout<<"load data...............\n";
+    float * data = IOAgent::load_fvecs(file,  row, col);
+    cout<<"load data with "<<row<<" * "<<col<<endl;
+    cout<<"clustering start"<<endl;
+    AbstractKMeans * myKmeans = new NNGKMeans();
+    myKmeans->buildcluster(data, row, col, "tmp.txt", "non", "large", "i2", clustNum, false);
+    cout<<"clustering end"<<endl;
+    myKmeans->saveCenters(centersFile, 0);
+    delete myKmeans;
+    return 0;
+}
 
 
 bool MissionAgent::genCenters(const char *name, const char * centers, int clustNum)
@@ -28,6 +44,7 @@ bool MissionAgent::genCenters(const char *name, const char * centers, int clustN
     myKmeans->saveCenters(centers, 0);
 
     delete mload;
+    delete myKmeans;
     return 0;
 }
 
