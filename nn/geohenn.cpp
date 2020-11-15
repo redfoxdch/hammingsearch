@@ -1,6 +1,6 @@
 #include "geohenn.h"
 #include "bruteforcenn.h"
-#include "hammingEmbedding/he.h"
+#include "he.h"
 #include "loadSift.h"
 #include <algorithm>
 #include <cstring>

@@ -1,9 +1,9 @@
 #ifndef ABSTRACTKMEANS_H
 #define ABSTRACTKMEANS_H
 
-#include "sparsematrix.h"
-#include "clsinfo.h"
-#include "nnitem.h"
+#include "util/sparsematrix.h"
+#include "util/clsinfo.h"
+#include "util/nnitem.h"
 
 #include <unordered_set>
 #include <vector>

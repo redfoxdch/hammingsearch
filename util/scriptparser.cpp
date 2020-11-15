@@ -1,5 +1,5 @@
-#include "scriptparser.h"
-#include "vstring.h"
+#include "util/scriptparser.h"
+#include "util/vstring.h"
 
 #include <iostream>
 #include <fstream>

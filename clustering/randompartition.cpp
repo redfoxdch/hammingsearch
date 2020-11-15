@@ -1,12 +1,12 @@
 #include "randompartition.h"
 
-#include "print2scrn.h"
-#include "ioagent.h"
-#include "cleaner.h"
-#include "vstring.h"
-#include "nnitem.h"
-#include "pqmath.h"
-#include "timer.h"
+#include "util/print2scrn.h"
+#include "util/ioagent.h"
+#include "util/cleaner.h"
+#include "util/vstring.h"
+#include "util/nnitem.h"
+#include "util/pqmath.h"
+#include "util/timer.h"
 
 #include <unordered_map>
 #include <algorithm>

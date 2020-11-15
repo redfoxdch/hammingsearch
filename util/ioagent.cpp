@@ -1,6 +1,6 @@
 #include "ioagent.h"
 
-#include "scriptparser.h"
+#include "util/scriptparser.h"
 #include "vstring.h"
 #include "pqmath.h"
 #include "cleaner.h"

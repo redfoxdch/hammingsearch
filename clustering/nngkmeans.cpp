@@ -1,9 +1,9 @@
 #include "randompartition.h"
 #include "nngkmeans.h"
-#include "ioagent.h"
-#include "vstring.h"
-#include "pqmath.h"
-#include "timer.h"
+#include "util/ioagent.h"
+#include "util/vstring.h"
+#include "util/pqmath.h"
+#include "util/timer.h"
 #include "nn/nn.h"
 
 #include <algorithm>

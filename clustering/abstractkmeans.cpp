@@ -1,6 +1,6 @@
 #include "abstractkmeans.h"
-#include "pqmath.h"
-#include "timer.h"
+#include "util/pqmath.h"
+#include "util/timer.h"
 
 #include <iostream>
 #include <iomanip>
@@ -9,7 +9,7 @@
 #include <cstring>
 #include <cmath>
 
-#include "pqmath.h"
+#include "util/pqmath.h"
 
 
 using namespace std;

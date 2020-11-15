@@ -1,8 +1,8 @@
 #ifndef GEOHENN_H
 #define GEOHENN_H
 
-#include "hammingEmbedding/he.h"
-#include "geo/geo.h"
+#include "he.h"
+#include "geo.h"
 #include "info.h"
 #include <string>
 #include <thread>

@@ -1,8 +1,8 @@
 #include "evaluator.h"
-#include "cleaner.h"
-#include "pqmath.h"
-#include "ioagent.h"
-#include "vstring.h"
+#include "util/cleaner.h"
+#include "util/pqmath.h"
+#include "util/ioagent.h"
+#include "util/vstring.h"
 
 #include <iostream>
 #include <fstream>

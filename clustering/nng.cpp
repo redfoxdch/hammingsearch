@@ -1,8 +1,8 @@
 #include "randompartition.h"
 #include "util/distance.hpp"
-#include "ioagent.h"
-#include "vstring.h"
-#include "timer.h"
+#include "util/ioagent.h"
+#include "util/vstring.h"
+#include "util/timer.h"
 #include "nng.h"
 #include "nn/nn.h"
 

@@ -12,7 +12,7 @@
 
 #include "abstractkmeans.h"
 #include "util/distance.hpp"
-#include "nnitem.h"
+#include "util/nnitem.h"
 
 #include <set>
 #include <map>
